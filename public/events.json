@@ -1,0 +1,120 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/kgN7kFk/corporate-retreat.webp",
+      "title": "Corporate Retreat",
+      "details": "A weekend retreat for team building and strategy planning. Ideal for reenergizing your team and enhancing company culture.",
+      "price": 1500.00,
+      "ratings": 4.8,
+      "features": [
+        "Team-building activities",
+        "Workshops for strategy planning",
+        "Scenic retreat location"
+      ]
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/SXYRx33/gala-dinner.jpg",
+      "title": "Gala Dinner",
+      "details": "An elegant evening to celebrate achievements, foster client relationships, and make a lasting impression.",
+      "price": 1200.00,
+      "ratings": 4.5,
+      "features": [
+        "Gourmet dining",
+        "Entertainment",
+        "Elegant decor"
+      ]
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/27NctFn/product-launch.jpg",
+      "title": "Product Launch Event",
+      "details": "Create buzz and excitement around your new product or service with captivating presentations and demonstrations.",
+      "price": 2500.00,
+      "ratings": 4.9,
+      "features": [
+        "Product demonstrations",
+        "Interactive presentations",
+        "Media coverage opportunities"
+      ]
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/3WVWJ2Q/team-building.jpg",
+      "title": "Team Building Workshop",
+      "details": "Enhance team dynamics and collaboration through experiential activities and leadership development exercises.",
+      "price": 800.00,
+      "ratings": 4.6,
+      "features": [
+        "Experiential activities",
+        "Leadership development",
+        "Team-building challenges"
+      ]
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/rZKWCbq/seminer-conference.jpg",
+      "title": "Seminar and Conference Management",
+      "details": "Organize informational events that bring industry experts and professionals together for knowledge sharing and networking.",
+      "price": 1800.00,
+      "ratings": 4.7,
+      "features": [
+        "Venue selection",
+        "Registration management",
+        "Content coordination"
+      ]
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co/Snbn6Cf/training.webp",
+      "title": "Corporate Training Programs",
+      "details": "Tailored learning experiences for upskilling employees in areas such as leadership and technical skills.",
+      "price": 1200.00,
+      "ratings": 4.8,
+      "features": [
+        "Customized training content",
+        "Professional trainers",
+        "Skill assessments"
+      ]
+    },
+    {
+      "id": 7,
+      "image": "https://i.ibb.co/ZJfY3tJ/breakfast.png",
+      "title": "Networking Breakfast",
+      "details": "Morning networking sessions to facilitate business connections and partnerships over a delicious breakfast.",
+      "price": 350.00,
+      "ratings": 4.3,
+      "features": [
+        "Structured networking",
+        "Business partnerships",
+        "Delicious breakfast spread"
+      ]
+    },
+    {
+      "id": 8,
+      "image": "https://i.ibb.co/9pzNQh4/charity-auction.webp",
+      "title": "Corporate Charity Auction",
+      "details": "Combine philanthropy and networking by organizing charity auctions with corporate leaders.",
+      "price": 500.00,
+      "ratings": 4.7,
+      "features": [
+        "Philanthropic opportunities",
+        "Networking with corporate leaders",
+        "Fundraising for a cause"
+      ]
+    },
+    {
+      "id": 9,
+      "image": "https://i.ibb.co/T1HZb1V/leadership.jpg",
+      "title": "Leadership Summit",
+      "details": "A summit focused on leadership development, featuring prominent keynote speakers and panel discussions.",
+      "price": 1600.00,
+      "ratings": 4.9,
+      "features": [
+        "Keynote speakers",
+        "Panel discussions",
+        "Leadership insights"
+      ]
+    }
+  ]
+  
