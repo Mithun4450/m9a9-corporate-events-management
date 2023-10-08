@@ -9,7 +9,7 @@ const ContextProvider = ({children}) => {
     
 
     useEffect(() =>{
-        fetch('events.json')
+        fetch('/events.json')
          .then(res => res.json())
          .then(data => setEvents(data))
     },[])

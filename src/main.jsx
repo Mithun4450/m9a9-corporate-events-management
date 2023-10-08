@@ -30,8 +30,9 @@ const router = createBrowserRouter([
         element: <Login></Login>
       },
       {
-        path: "/serviceDetails",
-        element: <ServiceDetails></ServiceDetails>
+        path: "/serviceDetails/:sid",
+        element: <ServiceDetails></ServiceDetails>,
+        
       }
     ]
   },
