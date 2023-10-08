@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { BiLogoMediumOld } from 'react-icons/bi';
+import { useContext } from "react";
+import { Context } from "../ContextProvider/ContextProvider";
 
 
 const Navbar = () => {
@@ -12,6 +14,14 @@ const Navbar = () => {
         <li><NavLink to="/contact">Contact</NavLink></li>
         
     </>
+
+    const { logOut, user} = useContext(Context);
+
+    const handleLogOut = () =>{
+        logOut()
+          .then()
+          .catch()
+    }
         
     
     return (
@@ -37,23 +47,23 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end space-x-3 font-semibold">
-                {/* {
+                {
                     user? <>
+                    <p>Name</p>
                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full">
                         <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
                         </div>
                     </label>
-                    <NavLink to="/login">Logout</NavLink>
+                    <NavLink onClick={handleLogOut}>Logout</NavLink>
                      </>: <>
                      <NavLink to="/login">Login</NavLink>
                      <NavLink to="/register">Register</NavLink>
                      </>
                     
-                } */}
+                }
 
-                     <NavLink to="/login">Login</NavLink>
-                     <NavLink to="/register">Register</NavLink>
+                     
                
             </div>
         </div>
