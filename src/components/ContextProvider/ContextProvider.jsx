@@ -6,7 +6,8 @@ import { getAuth,
     onAuthStateChanged,
     GoogleAuthProvider,
     signInWithPopup,
-    GithubAuthProvider
+    GithubAuthProvider,
+    updateProfile
  } from "firebase/auth";
 
 
@@ -64,6 +65,7 @@ const ContextProvider = ({children}) => {
         setLoading(true);
         return signOut(auth);
     }
+
 
 
     useEffect(() =>{

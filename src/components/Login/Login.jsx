@@ -1,12 +1,16 @@
-import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Context } from "../ContextProvider/ContextProvider";
 import { FcGoogle  } from 'react-icons/fc';
 import { BsGithub } from 'react-icons/bs';
+import swal from 'sweetalert';
 
 const Login = () => {
 
+    const [loginError, setLoginError] = useState('')
     const {loginWithEmailPassword, loginWithGoogle, loginWithGithub} = useContext(Context);
+    const navigate = useNavigate()
+    const location = useLocation();
 
     const handleLogin = e =>{
         e.preventDefault()
@@ -14,12 +18,18 @@ const Login = () => {
         const password = e.target.password.value;
         console.log(email, password)
 
+       
+
         loginWithEmailPassword(email, password)
             .then(result =>{
-                console.log(result.user)
+                console.log(result.user);
+                e.target.reset();
+                swal("Good job!", "You have successfully logged in!", "success");
+                navigate(location?.state? location.state : "/");
             })
             .catch(error =>{
                 console.error(error)
+                setLoginError(error.message)
             })
         
         
@@ -28,7 +38,8 @@ const Login = () => {
     const handleGoogleLogin = () =>{
         loginWithGoogle()
         .then(result =>{
-            console.log(result.user)
+            console.log(result.user);
+            navigate("/");
         })
         .catch(error =>{
             console.error(error)
@@ -38,7 +49,8 @@ const Login = () => {
     const handleGithubLogin = () =>{
         loginWithGithub()
         .then(result =>{
-            console.log(result.user)
+            console.log(result.user);
+            navigate("/");
         })
         .catch(error =>{
             console.error(error)
@@ -73,6 +85,11 @@ const Login = () => {
                             <div className="form-control mt-6">
                                 <button className="btn btn-primary">Login</button>
                             </div>
+
+                            {
+                            loginError && <p className="text-red-600">{loginError}</p>
+
+                           }
                         </form>
 
                         <p className="text-center pb-10">Are you new here? Please <span className="text-blue-700 underline"><Link to="/register">Register</Link></span> </p>
@@ -83,10 +100,10 @@ const Login = () => {
 
                <div>
                     <div className="form-control mt-6">
-                            <button onClick={handleGoogleLogin} className="btn btn-primary"> <span><FcGoogle className="text-2xl"></FcGoogle></span>Login with Google</button>
+                            <button onClick={handleGoogleLogin} className="btn btn-outline btn-primary"> <span><FcGoogle className="text-2xl"></FcGoogle></span>Login with Google</button>
                     </div>
                     <div className="form-control mt-6">
-                            <button onClick={handleGithubLogin} className="btn btn-primary"><span><BsGithub className="text-2xl text-black "></BsGithub></span>Login with GitHub</button>
+                            <button onClick={handleGithubLogin} className="btn btn-outline btn-primary"><span><BsGithub className="text-2xl text-black "></BsGithub></span>Login with GitHub</button>
                     </div>
                </div>
 

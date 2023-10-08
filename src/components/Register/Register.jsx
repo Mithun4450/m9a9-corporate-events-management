@@ -1,12 +1,16 @@
-import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { Context } from "../ContextProvider/ContextProvider";
+import swal from 'sweetalert';
+import { updateProfile } from "firebase/auth";
 
 
 
 const Register = () => {
-    
+
+    const [registerError, setRegisterError] = useState('');
     const {createUser} = useContext(Context);
+    const navigate = useNavigate();
 
     const handleRegister = e =>{
         e.preventDefault()
@@ -15,12 +19,40 @@ const Register = () => {
         const password = e.target.password.value;
         console.log(name, email, password)
 
+        setRegisterError('');
+
+        if(password.length < 6){
+            setRegisterError('Password must be of 6 characters or longer.')
+            return
+        }
+        else if(!/[A-Z]/.test(password)){
+            setRegisterError('Password must have at least one capital letter.')
+            return
+        }
+        else if(!/[@$!%*?&]/.test(password)){
+            setRegisterError('Password must have at least one special character.')
+            return
+        }
+
+
+
+
         createUser(email, password)
             .then(result => {
-                console.log(result.user)
+                console.log(result.user);
+                e.target.reset();
+                swal("Good job!", "You have successfully registered!", "success");
+
+                updateProfile(result.user, {displayName: name})
+                    .then(() => console.log('Profile updated'))
+                    .catch(error => console.log(error))
+
+               navigate("/");
             })
             .catch(error =>{
                 console.error(error)
+                setRegisterError(error.message)
+                
             })
         
     }
@@ -53,10 +85,15 @@ const Register = () => {
                             </label>
                             <input type="password" name="password" placeholder="password" className="input input-bordered" required />
                             
+                            
                         </div>
                         <div className="form-control mt-6">
                             <button className="btn btn-primary">Register</button>
                         </div>
+                        {
+                            registerError && <p className="text-red-700">{registerError}</p>
+
+                        }
                     </form>
                     <p className="text-center pb-10">Already registered? Please <span className="text-blue-700 underline"><Link to="/login">Login</Link></span> </p>
                 </div>
