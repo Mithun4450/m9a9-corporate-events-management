@@ -39,7 +39,8 @@ const Login = () => {
         loginWithGoogle()
         .then(result =>{
             console.log(result.user);
-            navigate("/");
+            swal("Good job!", "You have successfully logged in!", "success");
+            navigate(location?.state? location.state : "/");
         })
         .catch(error =>{
             console.error(error)
@@ -50,7 +51,8 @@ const Login = () => {
         loginWithGithub()
         .then(result =>{
             console.log(result.user);
-            navigate("/");
+            swal("Good job!", "You have successfully logged in!", "success");
+            navigate(location?.state? location.state : "/");
         })
         .catch(error =>{
             console.error(error)

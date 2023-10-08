@@ -9,7 +9,7 @@ import { updateProfile } from "firebase/auth";
 const Register = () => {
 
     const [registerError, setRegisterError] = useState('');
-    const {createUser} = useContext(Context);
+    const {createUser, logOut} = useContext(Context);
     const navigate = useNavigate();
 
     const handleRegister = e =>{
@@ -41,13 +41,14 @@ const Register = () => {
             .then(result => {
                 console.log(result.user);
                 e.target.reset();
-                swal("Good job!", "You have successfully registered!", "success");
+                swal("Good job!", "You have successfully registered! Please login now!", "success");
 
                 updateProfile(result.user, {displayName: name})
                     .then(() => console.log('Profile updated'))
                     .catch(error => console.log(error))
 
-               navigate("/");
+               logOut();
+               navigate("/login");
             })
             .catch(error =>{
                 console.error(error)

@@ -11,6 +11,7 @@ import Register from './components/Register/Register';
 import Login from './components/Login/Login';
 import ServiceDetails from './components/ServiceDetails/ServiceDetails';
 import ContextProvider from './components/ContextProvider/ContextProvider';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 const router = createBrowserRouter([
   {
@@ -31,7 +32,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/serviceDetails/:sid",
-        element: <ServiceDetails></ServiceDetails>,
+        element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>,
         
       }
     ]
