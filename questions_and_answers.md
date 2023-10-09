@@ -18,7 +18,7 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: `C: undefined. Reasons: Firstly greeting is declared but no value is assigned. Then empty object has been assigned to greetign which is incorrect spelling of greeting. console.log is made of greetign that is not declared. `
 
 <i>Write your explanation here</i>
 
