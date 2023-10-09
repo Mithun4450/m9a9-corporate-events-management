@@ -13,11 +13,15 @@ import ServiceDetails from './components/ServiceDetails/ServiceDetails';
 import ContextProvider from './components/ContextProvider/ContextProvider';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Gallery from './components/Gallery/Gallery';
+import Blog from './components/Blog/Blog';
+import About from './components/About/About';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children:[
       {
         path: "/",
@@ -39,6 +43,16 @@ const router = createBrowserRouter([
       {
         path: "/gallery",
         element: <PrivateRoute><Gallery></Gallery></PrivateRoute>,
+        
+      },
+      {
+        path: "/blog",
+        element: <PrivateRoute><Blog></Blog></PrivateRoute>,
+        
+      },
+      {
+        path: "/about",
+        element: <About></About>
         
       }
     ]
