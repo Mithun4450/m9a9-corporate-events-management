@@ -7,7 +7,7 @@ import { getAuth,
     GoogleAuthProvider,
     signInWithPopup,
     GithubAuthProvider,
-    updateProfile
+    
  } from "firebase/auth";
 
 
@@ -88,6 +88,7 @@ const ContextProvider = ({children}) => {
         loginWithEmailPassword,
         logOut,
         user,
+        loading,
         loginWithGoogle,
         loginWithGithub
         
