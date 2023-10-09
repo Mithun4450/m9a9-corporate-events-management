@@ -1,5 +1,5 @@
 
-[Corporate-Events-Management](https://i.ibb.co/9pzNQh4/charity-auction.webp)
+[Corporate-Events-Management](  )
 <br>
 Live Link: 
 
