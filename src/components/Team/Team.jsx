@@ -2,14 +2,14 @@
 
 const Team = () => {
     return (
-        <div>
-            <h1>Our Team</h1>
+        <div className="bg-blue-600 text-white rounded-md shadow-md text-center my-14">
+            <h1 className="text-4xl font-bold p-9">Our Team</h1>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-5 gap-5 mx-auto">
-                <div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-5 gap-10 w-3/4 mx-auto">
+                <div >
                     <div >
                             
-                        <img className="w-20 h-20" src="/public/persons/person5.png" /> 
+                        <img className="w-32 h-32 mx-auto rounded-full" src="/public/persons/person5.png" /> 
                         
                     </div>
                     <div>
@@ -20,7 +20,7 @@ const Team = () => {
                 <div>
                     <div >
                             
-                        <img className="w-20 h-20" src="/public/persons/person6.png" /> 
+                        <img className="w-32 h-32 mx-auto rounded-full" src="/public/persons/person6.png" /> 
                         
                     </div>
                     <div>
@@ -31,7 +31,7 @@ const Team = () => {
                 <div>
                     <div >
                             
-                        <img className="w-20 h-20" src="/public/persons/person1.png" /> 
+                        <img className="w-32 h-32 mx-auto rounded-full" src="/public/persons/person1.png" /> 
                         
                     </div>
                     <div>
@@ -42,7 +42,7 @@ const Team = () => {
                 <div>
                     <div >
                             
-                        <img className="w-20 h-20" src="/public/persons/person2.png" /> 
+                        <img className="w-32 h-32 mx-auto rounded-full" src="/public/persons/person2.png" /> 
                         
                     </div>
                     <div>
@@ -53,7 +53,7 @@ const Team = () => {
                 <div>
                     <div >
                             
-                        <img className="w-20 h-20" src="/public/persons/person4.png" /> 
+                        <img className="w-32 h-32 mx-auto rounded-full" src="/public/persons/person4.png" /> 
                         
                     </div>
                     <div>
@@ -64,7 +64,7 @@ const Team = () => {
                 <div>
                     <div >
                             
-                        <img className="w-20 h-20" src="/public/persons/person.png" /> 
+                        <img className="w-32 h-32 mx-auto rounded-full" src="/public/persons/person.png" /> 
                         
                     </div>
                     <div>
