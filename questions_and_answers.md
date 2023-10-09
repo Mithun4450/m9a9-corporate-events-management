@@ -18,10 +18,10 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: `C: undefined. Reasons: Firstly greeting is declared but no value is assigned. Then empty object has been assigned to greetign which is incorrect spelling of greeting. console.log is made of greetign that is not declared. `
+#### Answer: C: undefined. 
 
 <i>Write your explanation here</i>
-
+Firstly greeting is declared but no value is assigned. Then empty object has been assigned to greetign which  is incorrect spelling of greeting. console.log is made of greetign that is not declared. 
 </p>
 </details>
 
@@ -43,9 +43,10 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C: "12"
 
 <i>Write your explanation here</i>
+Here first argument is a number and second argument is a string. It not possible to find result of summation of a number and a string. It can be possible if string is converted to a number. But this is not included in this function. In this case "+" operator is used to concatenate the number with the string.
 
 </p>
 </details>
@@ -69,10 +70,10 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A: ['🍕', '🍫', '🥑', '🍔']
 
 <i>Write your explanation here</i>
-
+  Array food is declared which include 4 food items. Object info is declared with property favoriteFood with value from the first item of array food. Then value of property favoriteFood is reassigned with a new item. Reassigned value will not change the items of array food. So array food will remain unchanged.
 </p>
 </details>
 
@@ -94,9 +95,10 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: D: ReferenceError
 
 <i>Write your explanation here</i>
+In this function a parameter name is given. For this parameter, function  expected a argument when it was called. As no argument was given, function was not able to find any reference. Thus it caused a reference error.  
 
 </p>
 </details>
@@ -122,9 +124,10 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C: 3
 
 <i>Write your explanation here</i>
+In this code, an array named nums containing four numbers is declared. Here forEach method is used to iterate over each element in the array. In the callback function, there is an if statement that checks whether the current num is truthy. If the condition is true, it increments the count variable by 1. As there is three truthy numbers(0 is not a truthy), it is incremented three times by 1.
 
 </p>
 </details>
