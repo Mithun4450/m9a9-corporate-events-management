@@ -1,0 +1,58 @@
+[
+    {
+      "id": 1,
+      "img": "https://i.ibb.co/vv1vcSH/person6.jpg",
+      "name": "Mr. Rakib Uddin",
+      "designation": "Managing Director"
+      
+    },
+   
+    {
+      "id": 2,
+      "img": "https://i.ibb.co/TL4sghF/person5.jpg",
+      "name": "Mr. Motaleb Hossain",
+      "designation": "Additional Managing Director"
+      
+    },
+   
+    {
+      "id": 3,
+      "img": "https://i.ibb.co/KFmV55y/person1.jpg",
+      "name": "Mr. Karim Uddin",
+      "designation": "Deputy Managing Director"
+      
+    },
+   
+    {
+      "id": 4,
+      "img": "https://i.ibb.co/mNmGfyD/person2.jpg",
+      "name": "Mr. Reefat Mohiuddin",
+      "designation": "Deputy Director"
+      
+    },
+   
+    {
+      "id": 5,
+      "img": "https://i.ibb.co/VH42jJH/person4.jpg",
+      "name": "Mr. Nasir Uddin",
+      "designation": "Assistant Director"
+      
+    },
+   
+    {
+      "id": 6,
+      "img": "https://i.ibb.co/V3jMSr6/person.jpg",
+      "name": "Mr. Ashraf Uddin",
+      "designation": "Assistant Director"
+      
+    },
+   
+    {
+      "id": 7,
+      "img": "https://i.ibb.co/c6ZgFc5/avater.png"
+      
+      
+    }
+   
+  ]
+  

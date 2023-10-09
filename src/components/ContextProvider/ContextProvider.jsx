@@ -22,6 +22,7 @@ const ContextProvider = ({children}) => {
     const [events, setEvents] = useState([]);
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [person, setPerson] = useState(null);
     
     
 
@@ -30,6 +31,14 @@ const ContextProvider = ({children}) => {
          .then(res => res.json())
          .then(data => setEvents(data))
     },[])
+
+    useEffect(() =>{
+        fetch('/persons.json')
+         .then(res => res.json())
+         .then(data => setPerson(data))
+    },[])
+
+    console.log(person)
 
     const auth = getAuth(app);
 
@@ -90,7 +99,8 @@ const ContextProvider = ({children}) => {
         user,
         loading,
         loginWithGoogle,
-        loginWithGithub
+        loginWithGithub,
+        person
         
 
     }
