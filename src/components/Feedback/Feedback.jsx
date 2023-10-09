@@ -2,13 +2,13 @@
 
 const Feedback = () => {
     return (
-        <div className="hero min-h-screen bg-red-200 my-14 rounded-md shadow-lg">
+        <div className="hero min-h-screen bg-red-200 my-14 rounded-md shadow-lg" >
             <div className="hero-content flex-col lg:flex-row">
-                <div className="text-center lg:text-left lg:w-1/4">
+                <div className="text-center lg:text-left lg:w-1/4" >
                     <h1 className=" text-2xl md:text-3xl lg:text-4xl font-bold">Leave a feedback or ask your question here!</h1>
                 </div>
 
-                <div className="card flex-shrink-0 w-full max-w-md shadow-2xl bg-base-100">
+                <div className="card flex-shrink-0 w-full max-w-md shadow-2xl bg-base-100" >
                     <form className="card-body">
                         <div className="form-control">
                             <label className="label">

@@ -1,12 +1,14 @@
 
 
 const Team = () => {
+
+    
     return (
         <div className="bg-blue-600 text-white rounded-md shadow-md text-center my-14">
             <h1 className="text-4xl font-bold p-9">Our Team</h1>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-5 gap-10 w-3/4 mx-auto">
-                <div >
+                <div data-aos="fade-up" >
                     <div >
                             
                         <img className="w-32 h-32 mx-auto rounded-full" src="/public/persons/person5.png" /> 
@@ -17,7 +19,7 @@ const Team = () => {
                         <p>Managing Director</p>
                     </div>
                 </div>
-                <div>
+                <div data-aos="fade-up">
                     <div >
                             
                         <img className="w-32 h-32 mx-auto rounded-full" src="/public/persons/person6.png" /> 
@@ -28,7 +30,7 @@ const Team = () => {
                         <p>Additional Managing Director</p>
                     </div>
                 </div>
-                <div>
+                <div data-aos="fade-up">
                     <div >
                             
                         <img className="w-32 h-32 mx-auto rounded-full" src="/public/persons/person1.png" /> 
@@ -39,7 +41,7 @@ const Team = () => {
                         <p>Deputy Managing Director</p>
                     </div>
                 </div>
-                <div>
+                <div data-aos="fade-up">
                     <div >
                             
                         <img className="w-32 h-32 mx-auto rounded-full" src="/public/persons/person2.png" /> 
@@ -50,7 +52,7 @@ const Team = () => {
                         <p>Deputy Director</p>
                     </div>
                 </div>
-                <div>
+                <div data-aos="fade-up">
                     <div >
                             
                         <img className="w-32 h-32 mx-auto rounded-full" src="/public/persons/person4.png" /> 
@@ -61,7 +63,7 @@ const Team = () => {
                         <p>Assistant Director</p>
                     </div>
                 </div>
-                <div>
+                <div data-aos="fade-up">
                     <div >
                             
                         <img className="w-32 h-32 mx-auto rounded-full" src="/public/persons/person.png" /> 
