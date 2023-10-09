@@ -85,16 +85,18 @@ const Register = () => {
                             <span className="label-text">Password</span>
                             </label>
                             <input type="password" name="password" placeholder="password" className="input input-bordered" required />
+
+                            {
+                                registerError && <p className="text-red-600 pt-4">{registerError}</p>
+
+                            }
                             
                             
                         </div>
                         <div className="form-control mt-6">
                             <button className="btn btn-primary">Register</button>
                         </div>
-                        {
-                            registerError && <p className="text-red-700">{registerError}</p>
-
-                        }
+                        
                     </form>
                     <p className="text-center pb-10">Already registered? Please <span className="text-blue-700 underline"><Link to="/login">Login</Link></span> </p>
                 </div>

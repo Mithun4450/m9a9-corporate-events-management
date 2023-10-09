@@ -82,16 +82,18 @@ const Login = () => {
                                 <span className="label-text">Password</span>
                                 </label>
                                 <input type="password" name="password" placeholder="password" className="input input-bordered" required />
-                                
+
+                                {
+                                    loginError && <p className="text-red-600 pt-4">{loginError}</p>
+
+                                }
+                                        
                             </div>
                             <div className="form-control mt-6">
                                 <button className="btn btn-primary">Login</button>
                             </div>
 
-                            {
-                            loginError && <p className="text-red-600">{loginError}</p>
-
-                           }
+                           
                         </form>
 
                         <p className="text-center pb-10">Are you new here? Please <span className="text-blue-700 underline"><Link to="/register">Register</Link></span> </p>
