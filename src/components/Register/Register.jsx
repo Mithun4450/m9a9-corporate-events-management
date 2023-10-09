@@ -15,6 +15,7 @@ const Register = () => {
     const handleRegister = e =>{
         e.preventDefault()
         const name = e.target.name.value;
+        const photo = e.target.photo.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
         console.log(name, email, password)
@@ -43,7 +44,7 @@ const Register = () => {
                 e.target.reset();
                 swal("Good job!", "You have successfully registered! Please login now!", "success");
 
-                updateProfile(result.user, {displayName: name})
+                updateProfile(result.user, {displayName: name, photoURL:photo})
                     .then(() => console.log('Profile updated'))
                     .catch(error => console.log(error))
 
@@ -73,6 +74,12 @@ const Register = () => {
                             <span className="label-text">Name</span>
                             </label>
                             <input type="text" name="name" placeholder="name" className="input input-bordered" required />
+                        </div>
+                        <div className="form-control">
+                            <label className="label">
+                            <span className="label-text">Photo url</span>
+                            </label>
+                            <input type="text" name="photo" placeholder="photo url" className="input input-bordered" />
                         </div>
                         <div className="form-control">
                             <label className="label">

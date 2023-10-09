@@ -12,6 +12,7 @@ import Login from './components/Login/Login';
 import ServiceDetails from './components/ServiceDetails/ServiceDetails';
 import ContextProvider from './components/ContextProvider/ContextProvider';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import Gallery from './components/Gallery/Gallery';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,11 @@ const router = createBrowserRouter([
       {
         path: "/serviceDetails/:sid",
         element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>,
+        
+      },
+      {
+        path: "/gallery",
+        element: <PrivateRoute><Gallery></Gallery></PrivateRoute>,
         
       }
     ]
