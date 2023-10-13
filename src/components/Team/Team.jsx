@@ -6,6 +6,7 @@ import Member from "../Member/Member";
 const Team = () => {
 
     const {person} = useContext(Context);
+    console.log(person)
 
     
     return (
@@ -14,7 +15,7 @@ const Team = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-5 gap-10 w-3/4 mx-auto">
                 {
-                    person.slice(0, 6).map(member => <Member key={member.id} member={member}></Member>)
+                    Array.isArray(person) && person?.slice(0, 6).map(member => <Member key={member.id} member={member}></Member>)
                 }
                
             </div>
